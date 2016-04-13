@@ -1,0 +1,43 @@
+#wrapper {
+    min-height: 100%; /* минимальная высота обертки */
+    position: relative; /* позиционируем относительно этого блока */
+   }
+body {
+    background-color: #E6E6FA;
+}
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+#content {
+    margin-left: 260px;
+    margin-right: 50px;
+    padding-bottom: 100px;
+}
+p {
+    text-indent:40px;
+    margin: 0px;
+}
+.menu {
+    width: 250px;
+    margin: 5px;
+    padding-bottom: 50px;
+    float: left;
+}
+.menu a{
+    display: block;
+    padding-bottom: 10px;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    position: absolute; /* абсолютное позиционирование */
+    bottom: 0; /* прижимаем к нижнему краю обертки */
+    color: #fff;
+    text-align: center;
+    background: #B0E0E6;
+}
+#footer_correct {
+    height: 50px; /* высота блока-корректора */
+    clear: both; /* прерывание обтекания */
+}
