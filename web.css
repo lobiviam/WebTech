@@ -1,43 +1,181 @@
-#wrapper {
-    min-height: 100%; /* минимальная высота обертки */
-    position: relative; /* позиционируем относительно этого блока */
-   }
-body {
-    background-color: #E6E6FA;
+body{
+    height: 100%;
+    background-color: white;
 }
-h1 {
-    text-align: center;
-    padding: 10px;
+html{
+        height: 100%;
 }
-#content {
-    margin-left: 260px;
-    margin-right: 50px;
-    padding-bottom: 100px;
+#content-wrapper{
+    /*overflow: scroll;*/
+    height: 100%;
 }
-p {
-    text-indent:40px;
-    margin: 0px;
-}
-.menu {
-    width: 250px;
-    margin: 5px;
-    padding-bottom: 50px;
+.inner-content{
+    width: 50%;
     float: left;
+}
+#content1 {
+    background: indianred;
+}
+#content2 {
+    border: 2px splid red;
+}
+#content-wrapper > :nth-child(1),
+#content-wrapper > :nth-child(3),
+#content-wrapper > :nth-child(5){
+    background: #078A7C;
+}
+#content-wrapper > :nth-child(2),
+#content-wrapper > :nth-child(4) {
+    background: #49B849;
+}
+.content {
+    border-radius: 2px;
+    border: 1px solid black;
+    max-width: 800px;
+    padding: 10px 20px;
+    margin: 10px auto;
+}
+
+.header{
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+.header >h1 {
+    margin: 0;
+}
+.header-wrapper{
+    background: #285B82;
+    width:100%;
+}
+.header-link {
+    padding: 2px;
+    margin: 5px;
+    background: #3C6989 !important;
+    border-radius: 2px;
+    display: inline-block;
+    width: 20%;
+}
+.inline-img1{
+    /*float: left;*/
+    display: block;
+    margin: 5px;
+}
+
+#footer_correct {
+    text-align: center;
+    height: 50px;
+    clear: both;
+}
+
+.menu {
+    width: 18%;
+    height: 100%;
+    float: left;
+    padding-bottom: 10px;
+    background-color: #62AC8E;
 }
 .menu a{
     display: block;
-    padding-bottom: 10px;
+    padding-top:5px;
+    padding-left:10px;
 }
-footer{
+
+
+
+/* Grid */
+
+.grid-1 {
+    width: 6.5%;
+}
+
+.grid-2 {
+    width: 15%;
+}
+
+.grid-3 {
+    width: 23.5%;
+}
+
+.grid-4 {
+    width: 32%;
+}
+
+.grid-5 {
+    width: 40.5%;
+}
+
+.grid-6 {
+    width: 49%;
+}
+
+.grid-7 {
+    width: 57.5%;
+}
+
+.grid-8 {
+    width: 66%;
+}
+
+.grid-9 {
+    width: 74.5%;
+}
+
+.grid-10 {
+    width: 83%;
+}
+
+.grid-11 {
+    width: 91.5%;
+}
+
+.grid-12 {
     width: 100%;
-    height: 100px;
-    position: absolute; /* абсолютное позиционирование */
-    bottom: 0; /* прижимаем к нижнему краю обертки */
-    color: #fff;
-    text-align: center;
-    background: #B0E0E6;
 }
-#footer_correct {
-    height: 50px; /* высота блока-корректора */
-    clear: both; /* прерывание обтекания */
+
+.container {
+margin-left: 20%;
+margin-right: auto;
 }
+
+.container > [class^="grid-"] {
+    margin-left: 2%;
+    float: left;
+}
+
+.container > [class^="grid-"]:first-child {
+    margin-left: 0%;
+}
+
+.container > [class^="grid-"]:last-child {
+    float: right;
+}
+ @media(max-width:768px){
+    .header-link{
+        display: block;
+        width: calc(100%-10px);
+        /*width:100%;*/
+        text-align: center;
+    }
+    .menu{
+        display: none;
+    }
+ }
+ .fixed{
+    position: fixed;
+    top:0;
+ }
+ .up-button{
+     height: 40px;
+     width: 40px;
+     border-radius: 50%;
+     position: fixed;
+     bottom: 50px;
+     right: 10px;
+     background: black;
+ }
+ .up-button > span{
+    color:white;
+    font-size: 40px;
+    padding: 10px;
+ }
