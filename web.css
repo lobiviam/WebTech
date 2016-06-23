@@ -150,6 +150,13 @@ margin-right: auto;
 .container > [class^="grid-"]:last-child {
     float: right;
 }
+
+.container:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
  @media(max-width:768px){
     .header-link{
         display: block;
